@@ -32,7 +32,7 @@ owner = "jeff"
 # Radio link
 radioLink = "https://radio.zempirians.com"
 # Github repo bot source code link
-githubBot = "https://github.com/spotlightbulb/notifymaster/"
+githubBot = "https://github.com/catzgirl/NotifyMaster/"
 # Bot help command
 botList = ['+[Z]NotifyMaster','Contains basic help command and notifies bot owners when their bot is down','help'
 ,'+[Z]Citadel','Searches for the databases in which your string is found','!email string'
