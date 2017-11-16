@@ -41,6 +41,7 @@ botList = ['+[Z]NotifyMaster','Contains basic help command and notifies bot owne
 ,'+[Z]RadioBot','Manages the radio on '+radioLink+'!','[Z]RadioBot: help'
 ,'+[Z]RssFeeder','Automatically posts new articles from websites we are subscribed to','[RssFeeder]: help'
 ,'+[Z]Titler','Automatically pulls the title of links posted in the chat','[Z]Titler: help'
+,'+[Z]Git','Allows you to create text shortcuts and use easter eggs.','git help'
 ,'&Zempire','Administrative bot for the operators','[Z]Zempire: help'
 ]
 rules = ['[Z] represents a bot, +[Z] represents an official bot and & represents an administrative bot.'
@@ -151,7 +152,7 @@ while True:
 		for channel in channelList: # If you put 2 channels it dies...
 			try:
 				if data.decode('utf-8') and msgFind("PRIVMSG " + channel, data) and str(data).split('!')[0].split(':')[1] == "git" and msgFind("JUST KIDDING LOL", data):
-					ircMessage("Death to all humans!", channel)
+					ircMessage("DEATH TO ALL HUMANS!", channel)
 					#:git!zBot@blackcatz-4df.558.0j4iql.IP PRIVMSG #howtohack :JUST KIDDING LOL
 				if msgFind("PRIVMSG " + channel, data) or msgFind("PRIVMSG " + ircNick, data): #Should be fixed!
 					if msgFind("PRIVMSG" + ircNick, data):
